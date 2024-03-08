@@ -1,0 +1,25 @@
+.ant-drawer-mask{
+display: none;
+}
+.ant-drawer-content-wrapper {
+    top: 54px !important;
+    box-shadow: unset !important;
+}
+.ant-drawer-body {
+    background-color: #f9f9f9;
+    padding: 0px 10px !important;
+}
+.sider-cross-icon{
+    font-size: 20px;
+    color: #000;
+    cursor: pointer;
+    svg{
+        width: 15px;
+        height: 15px;
+    }
+}
+h2{
+    font-size: 28px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 600;
+}

@@ -1,0 +1,162 @@
+.main-content {
+    max-width: 65% !important;
+    flex: 0 0 65% !important;
+    padding-right: 17px;
+}
+
+.new-casino {
+    .casino-video {
+        position: relative;
+        background-color: transparent;
+
+        &-title {
+            position: absolute;
+            left: 5px;
+            top: 5px;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+            z-index: 10;
+            text-align: center;
+            min-width: 220px;
+            display: flex;
+            display: -webkit-flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .casino-name {
+                font-weight: bold;
+                text-transform: uppercase;
+                font-size: 20px;
+                color: #FDCF13;
+                line-height: 22px;
+                padding: 0;
+                background: transparent;
+                position: unset;
+                width: auto;
+            }
+        }
+
+        &-rid {
+            font-weight: bold;
+            color: #ddd;
+            margin-top: 3px;
+        }
+
+        .video-box-container {
+            max-width: 100%;
+
+            .video-box {
+                position: relative;
+                max-width: 100%;
+                width: 100%;
+                padding-bottom: 56.25%;
+
+                > img, > iframe {
+                    height: 100%;
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    object-fit: cover;
+                    border: 0;
+                }
+            }
+        }
+
+        .video-overlay {
+            position: absolute;
+            top: 50%;
+            background: rgba(0, 0, 0, 0.4);
+            height: auto;
+            left: 0;
+            content: "";
+            padding: 5px;
+
+            img {
+                width: 35px;
+                height: auto;
+                margin-right: 2px;
+                margin-left: 2px;
+            }
+        }
+    }
+
+    .redqueen {
+        background-color: #eee;
+        padding: 10px;
+    }
+
+    .m-t-10 {
+        margin-top: 10px !important;
+    }
+
+    .casino-odds-box-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        .casino-odds-box-container {
+            width: calc(25% - 8px);
+            margin-right: 8px;
+            margin-bottom: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+            .casino-odds-box {
+                padding: 4px;
+                text-align: center;
+                margin-top: 5px;
+                cursor: pointer;
+                height: 48px;
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                &>div {
+                    width: 49%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    height: 100%;
+                }
+
+                &-odd {
+                    font-weight: bold;
+                    font-size: 16px;
+                    margin-bottom: 3px;
+                    text-transform: uppercase;
+                }
+
+                span {
+                    display: block;
+                    width: 100%;
+                }
+            }
+
+            .suspended {
+                position: relative;
+            }
+
+            .back-border {
+                border: 2px solid #72bbef;
+            }
+
+            .lay-border {
+                border: 2px solid #f994ba;
+            }
+        }
+    }
+}
+
+marquee.casino-remark {
+    color: #17a2b8;
+    width: 100%;
+    position: relative;
+}

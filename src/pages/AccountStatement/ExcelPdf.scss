@@ -1,0 +1,23 @@
+.dt-buttons {
+    position: relative;
+    float: left;
+    .buttons-pdf {
+        background-color: #cb0606;
+        color: #fff;
+        box-shadow: 0px 5px 6px -6px #000;
+        border: 1px solid #cb0606;
+        height: 34px;
+        cursor: pointer;
+        padding: 0px 11px;
+        margin-right: 4px;
+    }
+    .buttons-excel {
+        background-color: #217346;
+        color: #fff;
+        box-shadow: 0px 5px 6px -6px #000;
+        border: 1px solid #217346;
+        height: 34px;
+        cursor: pointer;
+        padding: 0px 11px;
+    }
+}

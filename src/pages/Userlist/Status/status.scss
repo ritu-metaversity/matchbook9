@@ -1,0 +1,67 @@
+.head {
+  display: flex;
+  flex-direction: column;
+
+  .user-name {
+    float: left;
+    width: auto;
+    p {
+      font-size: 20px;
+      color: #ffc01a;
+      font-family: 'Roboto Condensed', sans-serif;
+    }
+  }
+  .float-right {
+    float: right !important;
+  }
+  .mb-20 {
+    margin-bottom: 20px !important;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  .switch_btn {
+    box-shadow: 0 1px 1px #000;
+    .ant-switch-inner {
+      cursor: pointer;
+      box-shadow: 0 1px 1px #000;
+    }
+    .ant-switch-handle{
+        &::before{
+            
+            background-color: #444;
+            
+        }
+    }
+    .ant-switch-inner-checked, .ant-switch-inner-unchecked{
+        text-transform: uppercase;
+        color: #000;
+        font-weight: 600;
+
+    }
+   
+  }
+  .ant-switch-checked {
+    background: #0088cc;
+}
+  .status_sub-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+    p {
+      margin: 0;
+    }
+
+    .active {
+      color: green;
+    }
+
+    .inactive {
+      color: red;
+    }
+  }
+}
+
+.mb-40{
+    margin-bottom: 40px;
+}

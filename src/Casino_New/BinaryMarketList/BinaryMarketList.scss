@@ -1,0 +1,38 @@
+.card-content {
+  .table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 0 !important;
+    background-color: transparent;
+    td,
+    th {
+      padding: 0.75rem;
+      vertical-align: top;
+      border-top: 1px solid #dee2e6;
+      .text-dark {
+        color: #343a40 !important;
+      }
+    }
+  }
+}
+
+.col-md-6{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+  .col-md-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+
+.binary_list{
+    
+}

@@ -1,0 +1,75 @@
+.main-container {
+  padding: 0px 5px;
+  .add-account {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin: 0;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    .heading_name {
+      font-family: "Roboto Condensed", sans-serif;
+      font-size: 28px;
+      font-family: inherit;
+      font-weight: 500;
+      line-height: 1.2;
+      color: inherit;
+    }
+    .m-b-20 {
+      margin-bottom: 20px;
+      font-family: "Roboto Condensed", sans-serif;
+    }
+    h4 {
+      font-weight: 700;
+      color: #fff !important;
+      background-color: #0088cc;
+      font-size: 18px !important;
+      padding: 2px 15px;
+      font-family: "Roboto Condensed", sans-serif;
+    }
+    .form-group {
+      position: relative;
+      .ant-form-item {
+        margin-bottom: 14px !important;
+      }
+      .ant-row {
+        display: block;
+        .ant-col {
+          text-align: start;
+          .ant-input {
+            display: block;
+            width: 92%;
+            padding: 0.3rem 0.75rem;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #495057;
+            font-family: "Roboto Condensed", sans-serif;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+            transition: border-color 0.15s ease-in-out,
+              box-shadow 0.15s ease-in-out;
+          }
+          .ant-select {
+            width: 92%;
+          }
+          .ant-form-item-required {
+            font-family: "Roboto Condensed", sans-serif;
+            &::before {
+              content: "" !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  .personal-detail {
+    margin-top: -23px;
+    .ant-row {
+      margin-top: -6px;
+    }
+  }
+  .top_left {
+    width: 98%;
+  }
+}

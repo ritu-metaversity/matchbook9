@@ -1,0 +1,100 @@
+.game-heading {
+  background-color: #0088cc;
+  color: #fff;
+  padding: 8px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Roboto Condensed", sans-serif;
+  .m-b-5 {
+    margin-bottom: 5px;
+  }
+}
+
+.card-content {
+  .table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    margin-bottom: 0;
+    .table {
+      margin-bottom: 0 !important;
+      width: 100%;
+      max-width: 100%;
+      background-color: transparent;
+    }
+    .m-t-10 {
+      margin-top: 10px !important;
+    }
+  }
+  .coupon-table {
+    thead {
+      th {
+        font-family: 'Roboto Condensed', sans-serif;
+        border-top: 0;
+        color: #303030;
+        font-size: 16px;
+        font-weight: 700;
+        padding: 6px 0;
+        vertical-align: bottom;
+        &:first-child {
+          text-align: left;
+          width: auto;
+          padding-left: 8px;
+          text-indent: 0;
+        }
+      }
+    }
+    tr {
+      td {
+        padding: 4px 0;
+        border-top: 0;
+        font-size: 14px;
+        word-wrap: break-word;
+        font-family: 'Roboto Condensed', sans-serif;
+        &:first-child {
+          padding-left: 15px;
+          vertical-align: middle;
+          padding-right: 15px;
+        }
+      }
+    }
+    button {
+      min-height: 30px;
+      color: #273a47 ;
+      font-family: 'Roboto Condensed', sans-serif;
+      border: 0;
+      background: none;
+      height: auto;
+      padding: 0;
+      cursor: pointer;
+      width: 100%;
+      min-width: 40px;
+      margin: 0;
+      text-align: center;
+      display: inline-block;
+      .odd {
+        font-weight: bold;
+        font-size: 16px;
+        margin-bottom: 3px;
+      }
+      span {
+        margin-bottom: 0;
+        display: block;
+        font-size: 10px;
+    }
+    }
+  }
+  .bet-info {
+    background-color: rgba(0, 0, 0, 0.05);
+    width: 100%;
+  }
+  .float-left {
+    float: left !important;
+  }
+}
+
+.box-w1 {
+  width: 85px;
+  max-width: 85px;
+  min-width: 85px;
+}

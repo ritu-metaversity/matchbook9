@@ -1,0 +1,252 @@
+.casino-grid {
+  .game-market {
+    margin-top: 8px;
+  }
+  .market-6 {
+    min-width: calc(100% - 8px);
+    max-width: calc(100% - 8px);
+    margin-left: 4px;
+    margin-right: 4px;
+    .market-title {
+      background-color: #0088cc;
+      padding: 6px 8px;
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      span {
+        display: inline-block;
+        max-width: calc(100% - 30px);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+    .row.row10 {
+      margin-left: -10px;
+      margin-right: -10px;
+      display: flex;
+      flex-wrap: wrap;
+      .col-md-4 {
+        position: relative;
+        width: 100%;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        @media screen and (min-width: 768px) {
+          flex: 0 0 33.333333%;
+          max-width: 33.333333%;
+        }
+        .market-header {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          padding: 0;
+          border-bottom: 1px solid #fff;
+        }
+        .market-nation-detail {
+          width: calc(100% - 160px);
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          padding: 0 5px;
+          font-size: 14px;
+        }
+        .market-odd-box {
+          min-height: 28px;
+          width: 80px;
+          padding: 2px 0;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          border-left: 1px solid #fff;
+          cursor: pointer;
+        }
+        .back {
+          background-color: #72bbef !important;
+        }
+        .fancy-min-max-box {
+          width: 80px;
+          padding: 0 5px;
+          text-align: right;
+        }
+        .market-row {
+          background-color: #f2f2f2;
+          display: flex;
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+  .text-right {
+    text-align: right !important;
+    margin-bottom: 0;
+    .ball-runs {
+      background: #0088cc;
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      display: inline-block;
+      line-height: 30px;
+      text-align: center;
+      color: #fff;
+      font-weight: bold;
+      margin-right: 3px;
+    }
+    .ball-runs.playerb {
+      background: #355e3b;
+      color: #ffff33;
+      cursor: pointer;
+    }
+  }
+}
+
+.flip-clock-wrapper {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  margin: 1em;
+  &::after {
+    content: " ";
+    display: table;
+  }
+  &::before {
+    content: " ";
+    display: table;
+  }
+  .flip {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+  }
+  ul {
+    position: relative;
+    float: left;
+    margin: 5px;
+    width: 60px;
+    height: 90px;
+    font-size: 80px;
+    font-weight: bold;
+    line-height: 87px;
+    border-radius: 6px;
+    background: #000;
+    list-style: none;
+    backface-visibility: hidden;
+    box-sizing: border-box;
+    li.flip-clock-before {
+      z-index: 3;
+      &:first-child {
+        z-index: 2;
+      }
+    }
+    li {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      line-height: 87px;
+      text-decoration: none !important;
+      a {
+        display: block;
+        height: 100%;
+        perspective: 200px;
+        margin: 0 !important;
+        overflow: visible !important;
+        cursor: default !important;
+        text-decoration: none;
+        color: #ccc;
+        .up {
+          z-index: 2;
+          animation: turn2 0.5s linear both;
+          transform-origin: 50% 100%;
+          top: 0;
+          position: absolute;
+          left: 0;
+          width: 100%;
+          height: 50%;
+          font-size: 80px;
+          overflow: hidden;
+          outline: 1px solid transparent;
+          @keyframes turn2 {
+            0% {
+              transform: rotateX(0deg);
+            }
+            100% {
+              transform: rotateX(-90deg);
+            }
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            top: 44px;
+            left: 0;
+            z-index: 5;
+            width: 100%;
+            height: 3px;
+            background-color: #000;
+            background-color: rgba(0, 0, 0, 0.4);
+          }
+          .shadow {
+            background: linear, top, rgba(0, 0, 0, 0.1) 0%, black 100%;
+            background: linear, to bottom, rgba(0, 0, 0, 0.1) 0%, black 100%;
+            animation: show 0.5s linear both;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            left: 0;
+            font-size: 80px;
+            overflow: hidden;
+            outline: 1px solid transparent;
+            @keyframes show {
+              0% {
+                opacity: 0;
+              }
+
+              100% {
+                opacity: 1;
+              }
+            }
+          }
+          .inn {
+            top: 0;
+            position: absolute;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            height: 200%;
+            color: #ccc;
+            text-shadow: 0 1px 2px #000;
+            text-align: center;
+            background-color: #333;
+            border-radius: 6px;
+            font-size: 70px;
+            overflow: hidden;
+            outline: 1px solid transparent;
+          }
+        }
+      }
+    }
+
+    .flip-clock-active {
+        animation: asd 0.01s 0.49s linear both;
+        z-index: 5;
+    }
+  }
+}
+
+.flip-clock-wrapper {
+  font: normal 11px "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.clock2digit {
+  max-width: 300px;
+  bottom: -25px;
+  position: absolute !important;
+  right: -37px;
+  width: auto !important;
+  transform: scale(0.6);
+}

@@ -1,0 +1,151 @@
+.header-bottom {
+  background-color: #0088cc;
+  padding: 8px 0;
+  position: relative;
+  color: #fff;
+  .logo {
+    position: absolute;
+    left: 5px;
+    top: 6px;
+    z-index: 11;
+    img {
+      max-width: 120px;
+      height: 40px;
+    }
+  }
+  .side-menu-button {
+    cursor: pointer;
+    position: absolute;
+    left: 135px;
+    top: 15px;
+    z-index: 10;
+    .bar1,
+    .bar2,
+    .bar3 {
+      width: 20px;
+      height: 3px;
+      background-color: #fff;
+      margin: 4px 0;
+      transition: 0.4s;
+    }
+  }
+  .change {
+    .bar1 {
+      transform: rotate(-45deg) translate(-2px, 6px);
+    }
+    .bar2 {
+      opacity: 0;
+    }
+    .bar3 {
+      transform: rotate(45deg) translate(-4px, -8px);
+    }
+  }
+  .btco-hover-menu {
+    background: none;
+    margin: 0;
+    padding: 0;
+    min-height: 36px;
+    @media screen and (min-width: 768px) {
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+    }
+    a{
+        text-transform: capitalize;
+    padding: 10px 10px;
+    color: #fff;
+    }
+  }
+  .navbar {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    .navbar-collapse {
+      flex-basis: 100%;
+      flex-grow: 1;
+      align-items: center;
+      margin-top: -14px;
+      @media screen and (min-width: 768px) {
+        display: flex !important;
+        flex-basis: auto;
+      }
+      .navbar-nav {
+        padding-left: 150px;
+        display: flex;
+        margin-bottom: 0;
+        list-style: none;
+        @media screen and (min-width: 768px) {
+          flex-direction: row;
+        }
+        li {
+          position: relative;
+        }
+      }
+    }
+  }
+  .user-search {
+    position: absolute;
+    right: 30px;
+    top: -7px;
+
+    li {
+      float: left;
+      line-height: 38px;
+    }
+  }
+  .list-unstyled {
+    padding-left: 0;
+    list-style: none;
+    .username {
+      position: relative;
+      cursor: pointer;
+      a{
+        color: #fff;
+      }
+    }
+    .search1 {
+      margin-left: 10px;
+      position: relative;
+      input {
+        height: 38px;
+        border: 0;
+        padding: 0 10px;
+        width: 160px;
+        border-radius: 2px;
+        a {
+          color: #fff;
+        }
+        
+      }
+      svg {
+        font-size: 24px;
+        margin-left: 5px;
+        position: absolute;
+        right: 7px;
+        top: 7px;
+        cursor: pointer;
+        color: #333;
+      }
+    }
+  }
+  .anticon svg {
+    display: inline-block;
+    font-size: 12px;
+    margin-left: 2px;
+}
+}
+
+
+.ant-dropdown-menu{
+background-color: #0088cc !important;
+color: #fff !important;
+box-shadow: unset !important;
+border-radius: unset !important;
+width: 200px;
+li{
+  color: #fff !important;
+}
+}

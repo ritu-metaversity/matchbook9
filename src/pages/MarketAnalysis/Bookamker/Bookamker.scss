@@ -1,0 +1,89 @@
+.fancy-marker-title {
+  h4 {
+    background-color: #0088ccc2;
+    color: #fff;
+    font-size: 14px;
+    padding: 6px 8px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+}
+.bm-section {
+  .table-bordered {
+    border: 1px solid #dee2e6;
+    width: 100%;
+    .p-r-5 {
+      padding-right: 5px;
+    }
+    .text-info {
+      color: #17a2b8 !important;
+    }
+  }
+}
+
+.bookmaker-container {
+  .box-w1 {
+    width: 60px;
+    min-width: 60px;
+    max-width: 60px;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+  .table {
+    .bet-info {
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+  }
+
+  button {
+    min-height: 30px;
+    color: #273a47;
+    font-family: "Roboto Condensed", sans-serif;
+    border: 0;
+    background: none;
+    height: auto;
+    padding: 0;
+    cursor: pointer;
+    width: 100%;
+    min-width: 40px;
+    margin: 0;
+    text-align: center;
+    display: inline-block;
+    .odd {
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 3px;
+    }
+    span {
+      margin-bottom: 0;
+      display: block;
+      font-size: 10px;
+    }
+  }
+}
+
+.m-b-10 {
+  margin-bottom: 10px !important;
+}
+
+.bookmaker-market {
+  .suspended {
+    position: relative;
+    &::after {
+      align-items: center;
+      position: absolute;
+      content: attr(data-title);
+      top: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.3);
+      color: #ff0000;
+      width: 374px;
+      height: 100%;
+      cursor: not-allowed;
+      display: flex;
+      justify-content: center;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+  }
+}

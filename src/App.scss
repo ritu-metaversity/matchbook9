@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;1,500&display=swap');
+.ant-layout {
+    font-family: 'Roboto Condensed', sans-serif !important;
+  
+  }
+body{
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto Condensed', sans-serif !important;
+}
+.active_user_list{
+  padding: 18px 25px;
+  .header{
+    font-size: 23px;
+    font-weight: 500;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+}
+
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 14px;
+  line-height: 0;
+  border-radius: 0.25rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn-back {
+  background-color: #0088cc;
+  border-color: #0088cc;
+  color: #fff;
+}
+
+.back0 {
+  background-color: #72BBEF !important;
+}
+.lay0 {
+  background-color: #FAA9BA !important;
+}
+.back2 {
+  background-color: rgba(114, 187, 239, .5);
+}
+.back1 {
+  background-color: rgba(114, 187, 239, .75);
+}
+.lay1 {
+  background-color: rgba(250, 169, 186, .75);
+}
+.lay2 {
+  background-color: rgba(250, 169, 186, .5);
+}
+
+.loss{
+  color: red;
+}
+.profit{
+  color: green;
+}
+
+.ant-modal-close {
+  .ant-modal-close-x {
+    width: 30px !important;
+    height: 30px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border-radius: 50%;
+  }
+}
+
+.ant-modal-content {
+  padding: 0px 14px;
+  .ant-modal-header {
+    padding: 14px;
+    border-bottom: 1px solid #e9ecef;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+    .ant-modal-title {
+      font-size: 21px;
+      margin-bottom: 0;
+      line-height: 1.5;
+      font-family: "Roboto Condensed", sans-serif;
+    }
+  }
+  .ant-modal-close-x {
+    height: 35px !important;
+    width: 35px !important;
+    background-color: #0088cc;
+    opacity: 1;
+    border-radius: 100%;
+    padding: 0px;
+    margin-left: -9px;
+    margin-top: -2px;
+    color: #fff;
+    .anticon-close {
+      svg {
+        font-size: 14px;
+      }
+    }
+  }
+  .ant-modal-body {
+      padding: 5px 14px 14px 14px;
+  }
+}
+
+.ant-modal {
+  top: 28px !important;
+  vertical-align: unset !important;
+}
+.ant-modal-content{
+  padding: unset !important;
+}
+
+.game_report_select{
+  width: 97.6%;
+}
+
+.no_data{
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #1e1e1e;
+}
+.ant-input{
+  border-radius: 2px !important;
+}
+.alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  ul{
+    list-style-type: none;
+  }
+}
+.alert {
+  position: relative;
+  padding: 0px;
+  // margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.lay,
+.lay-color {
+    background-color: #faa9ba !important;
+}
+
+.back,
+.back-color {
+    background-color: #72bbef !important;
+}
+
+.layx {
+    background-color: #faa9ba !important;
+}
+
+.backx {
+    background-color: #72bbef !important;
+}
